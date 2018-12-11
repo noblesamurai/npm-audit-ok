@@ -1,33 +1,11 @@
-# Npm-audit-ok [![Build Status](https://secure.travis-ci.org/\/npm-audit-ok.png?branch=master)](http://travis-ci.org/\/npm-audit-ok) [![NPM version](https://badge-me.herokuapp.com/api/npm/npm-audit-ok.png)](http://badges.enytc.com/for/npm/npm-audit-ok)
+# npm-audit-ok
 
 > Exits with exit status 1 if there are critical vulnerabilities reported by npm audit.
 
-## Purpose
-- What problem does this module solve? At least a few sentences.
-PLEASE_FILL_IN_HERE
-
 ## Usage
+You can add `npx npm-audit-ok` to your travis CI or similar to ensure there are no critical vulnerabilities.
+Will exit with non-zero status if there are.
 
-```js
-// Several examples of usage.
-// Usually copying and pasting code from the tests and making the code standalone suffices.
-// PLEASE_FILL_IN_HERE
-```
-
-## API
-
-PLEASE_FILL_IN_HERE
-
-Note: To regenerate this section from the jsdoc run `npm run docs` and paste
-the output above.
-
-## Installation
-
-This module is installed via npm:
-
-``` bash
-$ npm install npm-audit-ok
-```
 ## License
 
 The BSD License
