@@ -1,7 +1,7 @@
 {
   "name": "npm-audit-ok",
   "description": "Exits with exit status 1 if there are critical vulnerabilities reported by npm audit.",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "author": "Tim Allen <tim@noblesamurai.com>",
   "license": "BSD",
   "bin": {
