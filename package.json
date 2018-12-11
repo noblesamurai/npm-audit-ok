@@ -1,0 +1,48 @@
+{
+  "name": "npm-audit-ok",
+  "description": "Exits with exit status 1 if there are critical vulnerabilities reported by npm audit.",
+  "version": "0.0.1",
+  "author": "Tim Allen <tim@noblesamurai.com>",
+  "license": "BSD",
+  "main": "index.js",
+  "scripts": {
+    "coverage": "nyc -a -c -r html -r text -r lcov npm test",
+    "pretest": "semistandard --env mocha",
+    "test": "mocha --recursive test",
+    "watch": "mocha --recursive --watch test",
+    "docs": "jsdoc2md index.js"
+  },
+  "homepage": "https://github.com//npm-audit-ok",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com//npm-audit-ok.git"
+  },
+  "bugs": {
+    "url": "https://github.com//npm-audit-ok/issues"
+  },
+  "engines": {
+    "node": "8.x",
+    "npm": "5.x"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^4.0.0",
+    "dirty-chai": "^1.2.2",
+    "mocha": "^5.2.0",
+    "nyc": "^12.0.2",
+    "semistandard": "*",
+    "jsdoc-to-markdown": "^4.0.0"
+  },
+  "keywords": [],
+  "nyc": {
+    "exclude": [
+      "coverage",
+      "test"
+    ]
+  },
+  "semistandard": {
+    "env": [
+      "mocha"
+    ]
+  }
+}
