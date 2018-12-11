@@ -29,7 +29,7 @@
   "dependencies": {
     "get-stream": "^4.1.0"
   },
-  "keywords": [],
+  "keywords": ["npm", "audit", "security", "travis", "CI"],
   "nyc": {
     "exclude": [
       "coverage",
