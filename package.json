@@ -7,7 +7,7 @@
   "bin": {
     "npm-audit-ok": "./bin/index.js"
   },
-  "main": "index.js",
+  "main": "bin/index.js",
   "scripts": {
     "coverage": "nyc -a -c -r html -r text -r lcov npm test",
     "pretest": "semistandard --env mocha",
