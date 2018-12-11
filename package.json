@@ -4,6 +4,9 @@
   "version": "0.0.1",
   "author": "Tim Allen <tim@noblesamurai.com>",
   "license": "BSD",
+  "bin": {
+    "npm-audit-ok": "./bin/index.js"
+  },
   "main": "index.js",
   "scripts": {
     "coverage": "nyc -a -c -r html -r text -r lcov npm test",
@@ -24,14 +27,8 @@
     "node": "8.x",
     "npm": "5.x"
   },
-  "dependencies": {},
-  "devDependencies": {
-    "chai": "^4.0.0",
-    "dirty-chai": "^1.2.2",
-    "mocha": "^5.2.0",
-    "nyc": "^12.0.2",
-    "semistandard": "*",
-    "jsdoc-to-markdown": "^4.0.0"
+  "dependencies": {
+    "get-stream": "^4.1.0"
   },
   "keywords": [],
   "nyc": {
