@@ -11,7 +11,7 @@
   "scripts": {
     "coverage": "nyc -a -c -r html -r text -r lcov npm test",
     "pretest": "semistandard --env mocha",
-    "test": "mocha --recursive test",
+    "test": "cd test && npm init -y && npm i && node ../bin/index",
     "watch": "mocha --recursive --watch test",
     "docs": "jsdoc2md index.js"
   },
