@@ -8,7 +8,7 @@
     "npm-audit-ok": "./bin/index.js"
   },
   "scripts": {
-    "coverage": "nyc -a -c -r html -r text -r lcov npm test",
+    "coverage": "c8 npm test",
     "pretest": "semistandard --env mocha",
     "test": "cd test && npm init -y && npm i && node ../bin/index",
     "watch": "mocha --recursive --watch test",
@@ -27,14 +27,28 @@
     "npm": "5.x"
   },
   "dependencies": {
-    "get-stream": "^4.1.0"
+    "c8": "^7.7.3",
+    "get-stream": "^4.1.0",
+    "semistandard": "^16.0.1"
   },
-  "keywords": ["npm", "audit", "security", "travis", "CI"],
-  "nyc": {
+  "keywords": [
+    "npm",
+    "audit",
+    "security",
+    "travis",
+    "CI"
+  ],
+  "c8": {
     "exclude": [
       "coverage",
       "test"
-    ]
+    ],
+    "reporter": [
+      "lcov",
+      "text"
+    ],
+    "cache": true,
+    "all": true
   },
   "semistandard": {
     "env": [
