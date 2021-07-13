@@ -6,6 +6,20 @@
 You can add `npx npm-audit-ok` to your travis CI or similar to ensure there are no critical vulnerabilities.
 Will exit with non-zero status if there are.
 
+## Contributing
+
+### Prerequisites
+
+```
+$ pip install pre-commit
+```
+
+### Installation
+
+```
+$ pre-commit install --install-hooks
+```
+
 ## License
 
 The BSD License
